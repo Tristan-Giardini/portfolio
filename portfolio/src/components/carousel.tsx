@@ -15,7 +15,7 @@ export default function Carousel() {
               drag: 'free',
               arrows: false,
               pagination: false,
-              perPage: 4,
+              perPage: 5,
               autoScroll: {
                 pauseOnHover: false,
                 pauseOnFocus: false,

@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${montserrat.variable} font-sans`}>
           {/* <div style={{ zIndex: -10, position: "fixed", width: "100vw", height: "100vh" }}>
-            <Image src="/dark-gradient.jpg" alt="background-image" layout="fill" objectFit="cover" />
+            <Image src="/wave.jpg" alt="background-image" layout="fill" objectFit="cover" />
           </div> */}
           <div className="w-full">
           <Header />

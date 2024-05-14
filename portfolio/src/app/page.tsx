@@ -14,29 +14,34 @@ export default function Home() {
   return (
     <>
       <div className="py-40 w-8/12">
-        <p className="text-3xl">
+        <p className="text-4xl">
         A full-stack developer based in Montreal, dedicated to creating user-centric and accessible websites.
         </p>
+        <p className="text-4xl">
+          
+        </p>
       </div>
-      <div className="text-xl mb-10">Featured work</div>
+      <div className="text-xl mb-10">Work & projects</div>
       <div className="flex flex-col w-full lg:gap-60 gap-28">
       <div className="flex flex-col lg:flex-row gap-28 px-20 lg:ml-24">
         <Work
-          link="#"
-          title="KBD Insurance Quoter - HRVST"
-          subtitle="Fullstack development - application redesign"
+          link="https://app.kbdinsurance.com/"
+          title="KBD Insurance Quoter"
+          company="HRVST"
+          subtitle="Fullstack development"
           tech="TypeScript, CSS, Node.js, Express, MongoDB, Heroku"
-          image="/image1.jpeg"
+          image="/kbdinsurance.png"
           className="self-end"
           speed={screenWidth > 1024 ? -2 : 0}
           id="parallax"
           margin="mt-20"
         />
         <Work
-          image="/image3.jpeg"
-          link="#"
-          title="Surf Custom - HRVST"
-          subtitle="Front-end development - custom designer, application integration"
+          image="/surf2.png"
+          link="https://surfcustom.com/products/surfboard"
+          title="Surf Custom"
+          company="HRVST"
+          subtitle="Front-end development"
           tech="React, CSS, Vite, Shopify Liquid"
           className="self-end"
           speed={screenWidth > 1024 ? 1 : 0}
@@ -46,38 +51,42 @@ export default function Home() {
         </div>
         <div className="flex flex-col lg:flex-row gap-28 px-20 lg:ml-24">
         <Work
-          image="/image1.jpeg"
-          link="#"
-          title="Westmount Florist - HRVST"
-          subtitle="Front-end development - custom checkout flow"
+          image="/wf.png"
+          link="https://westmountflorist.com/"
+          title="Westmount Florist"
+          company="HRVST"
+          subtitle="Front-end development"
           tech="React, CSS, Vite, Shopify Liquid"
           className="self-end"
-          speed={screenWidth > 1024 ? -6 : 0}
+          speed={screenWidth > 1024 ? -8 : 0}
           id="parallax"
           margin={screenWidth > 1024 ? "mt-20" : ""}
         />
         <Work
-          image="/image3.jpeg"
-          link="#"
+          image="/brmtl.png"
+          link="https://www.bathroomsmtl.ca/"
           title="BathroomsMTL"
-          subtitle="Fullstack development - application design/development"
+          company="Project"
+          subtitle="Fullstack development"
           tech="React, CSS, Node.js, Express, MongoDB, OnRender"
           className="self-end"
           speed={screenWidth > 1024 ? -0.5 : 0}
           id="parallax"
+          margin=""
         />
         </div>
         <div className="flex flex-row gap-28 px-20 lg:ml-24 lg:w-6/12">
         <Work
-          image="/image1.jpeg"
-          link="#"
-          title="Westmount Florist - HRVST"
-          subtitle="Front-end development - custom checkout flow"
-          tech="React, CSS, Vite, Shopify Liquid"
+          image="/beccs.png"
+          link="https://rebecca-website.vercel.app"
+          title="Rebecca Storm"
+          company="Freelance"
+          subtitle="Front-end development"
+          tech="React, CSS, Vercel"
           className="self-end"
-          speed={screenWidth > 1024 ? -12 : 0}
+          speed={screenWidth > 1024 ? -14 : 0}
           id="parallax"
-          margin={screenWidth > 1024 ? "mb-20" : ""}
+          margin={screenWidth > 1024 ? "mb-40" : ""}
         />
         </div>
       </div>

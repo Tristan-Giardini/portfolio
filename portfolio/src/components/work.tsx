@@ -11,7 +11,8 @@ interface FeaturedWorkProps {
   className: string;
   speed: number;
   id: string;
-  margin: string
+  margin: string;
+  company: string;
 }
 
 export default function Work({
@@ -23,7 +24,8 @@ export default function Work({
   className,
   speed,
   id,
-  margin
+  margin,
+  company
 }: FeaturedWorkProps) {
 
   return (
@@ -31,11 +33,13 @@ export default function Work({
     <Parallax speed={speed} className={className} id={id}>
     <div className={`project-card w-full p-10 rounded-lg ${margin} bg-gray-50`}>
       <Image src={image} alt="project image" width={800} height={800} className="rounded-lg"></Image>
-      <div className="mt-10 flex flex-col gap-1">
-        <p>{title}</p>
-        <p>{subtitle}</p>
-        <p>{tech}</p>
-        <Link href={link} className="mt-4">See here</Link>
+      <div className="mt-10 mb-4 flex flex-col gap-1">
+        <p><span className="font-semibold">{title}</span> - <span className="italic">{company}</span></p>
+        <p className="text-sm mt-2">{subtitle}</p>
+        <p className="text-xs">{tech}</p>
+      </div>
+      <div className="flex flex-row gap-2">
+        <Link href={link} className="">See here</Link><span>👈</span>
       </div>
     </div>
     </Parallax>
