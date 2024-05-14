@@ -15,7 +15,7 @@ export default function Carousel() {
               drag: 'free',
               arrows: false,
               pagination: false,
-              perPage: 5,
+              perPage: 6,
               autoScroll: {
                 pauseOnHover: false,
                 pauseOnFocus: false,
@@ -57,6 +57,12 @@ export default function Carousel() {
       </SplideSlide>
       <SplideSlide>
         <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webflow/webflow-original.svg" alt="Slide 3" width="150" height="150"></Image>
+      </SplideSlide>
+      <SplideSlide>
+        <Image src="/liquid.svg" alt="Slide 3" width="150" height="150"></Image>
+      </SplideSlide>
+      <SplideSlide>
+        <Image src="/shop.svg" alt="Slide 3" width="150" height="150"></Image>
       </SplideSlide>
     </Splide>
         </>

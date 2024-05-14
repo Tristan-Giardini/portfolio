@@ -26,6 +26,42 @@ body {
   margin-top: -300px;
 }
 
+.link-hover::before {
+    content: '';
+    background-color: hsla(196, 61%, 58%, .75);
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 0%;
+    height: 8px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+
+.link-hover:hover::before {
+  width: 100%;
+}
+
+@keyframes moveX {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes moveY {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+.see-div:hover .finger-ani {
+  animation: moveX 1s ease-in-out infinite;
+}
+
+.social-hover:hover {
+  animation: moveY 1s ease-in-out infinite;
+}
+
 @media screen and (max-width: 1024px) {
   .technologies {
     margin-top: 200px;
