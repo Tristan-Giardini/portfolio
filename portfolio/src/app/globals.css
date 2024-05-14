@@ -18,6 +18,16 @@ body {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
+.project-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
 .technologies {
   margin-top: -300px;
+}
+
+@media screen and (max-width: 1024px) {
+  .technologies {
+    margin-top: 200px;
+  }
 }
