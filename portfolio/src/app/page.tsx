@@ -13,84 +13,91 @@ export default function Home() {
 
   return (
     <>
-      <div className="py-40 w-8/12">
-        <p className="text-4xl">
+      <div className="lg:pt-36 lg:pb-40 lg:w-8/12 pt-14 pb-20 md:w-10/12 w-12/12">
+        <p className="lg:text-4xl text-2xl">
         A full-stack developer based in Montreal, dedicated to creating user-centric and accessible websites.
         </p>
-        <p className="text-4xl">
-          
-        </p>
       </div>
-      <div className="text-xl mb-10">Work & Projects</div>
-      <div className="flex flex-col w-full lg:gap-60 gap-28">
-      <div className="flex flex-col lg:flex-row gap-28 px-8 sm:px-20 lg:ml-24">
+      <div className="text-xl lg:text-2xl mb-10 md:mb-16 lg:mb-20">Work & Projects</div>
+      <div className="flex flex-col w-full gap-12 md:gap-20 xl:gap-60 lg:gap-28">
+      <div className="flex flex-col lg:flex-row gap-12 md:gap-20 lg:gap-28 px-0 sm:px-10 md:px-20 lg:ml-36">
         <Work
           link="https://app.kbdinsurance.com/"
           title="KBD Insurance Quoter"
           company="HRVST"
-          subtitle="Full-stack Development - Reskin & Refactor"
+          subtitle="Full-stack Development"
+          work="Reskin & Refactor"
           tech="TypeScript, CSS, Node.js, Express, MongoDB, Heroku"
           image="/kbdinsurance.png"
           className="self-end"
           speed={screenWidth > 1024 ? -1 : 0}
           id="parallax"
           margin="mt-20"
+          screen={screenWidth}
         />
         <Work
           image="/surf2.png"
           link="https://surfcustom.com/products/surfboard"
           title="Surf Custom"
           company="HRVST"
-          subtitle="Front-end Development - PDP Custom Integration"
+          subtitle="Front-end Development"
+          work="PDP Custom Integration"
           tech="React, CSS, Vite, Shopify Liquid"
           className="self-end"
           speed={screenWidth > 1024 ? 1 : 0}
           id="parallax"
           margin={screenWidth > 1024 ? "mb-12" : ""}
+          screen={screenWidth}
         />
         </div>
-        <div className="flex flex-col lg:flex-row gap-28 px-8 sm:px-20 lg:ml-24">
+        <div className="flex flex-col lg:flex-row gap-12 md:gap-20 lg:gap-28 px-0 sm:px-10 md:px-20 lg:ml-24">
         <Work
           image="/wf.png"
           link="https://westmountflorist.com/"
           title="Westmount Florist"
           company="HRVST"
-          subtitle="Front-end Development - Custom Checkout Extension"
+          subtitle="Front-end Development"
+          work="Custom Checkout Extension"
           tech="React, CSS, Vite, Shopify Liquid"
           className="self-end"
           speed={screenWidth > 1024 ? -3 : 0}
           id="parallax"
           margin={screenWidth > 1024 ? "mt-20" : ""}
+          screen={screenWidth}
         />
         <Work
           image="/brmtl.png"
           link="https://www.bathroomsmtl.ca/"
           title="BathroomsMTL"
           company="Project"
-          subtitle="Full-stack Development - Design & Development"
+          subtitle="Full-stack Development"
+          work="Design & Development"
           tech="React, CSS, Node.js, Express, MongoDB, OnRender"
           className="self-end"
           speed={screenWidth > 1024 ? 1 : 0}
           id="parallax"
           margin=""
+          screen={screenWidth}
         />
         </div>
-        <div className="flex flex-row gap-28 px-8 sm:px-20 lg:ml-24 lg:w-6/12">
+        <div className="flex flex-row md:gap-20 lg:gap-28 px-0 sm:px-10 md:px-20 lg:ml-24 lg:w-6/12">
         <Work
           image="/beccs.png"
           link="https://rebecca-website.vercel.app"
           title="Rebecca Storm"
           company="Freelance"
-          subtitle="Front-end Development - Design & Development"
+          subtitle="Front-end Development"
+          work="Design & Development"
           tech="React, CSS, Vercel"
           className="self-end"
           speed={screenWidth > 1024 ? -14 : 0}
           id="parallax"
           margin={screenWidth > 1024 ? "mb-20" : ""}
+          screen={screenWidth}
         />
         </div>
       </div>
-      <div className="technologies mb-40">
+      <div className="technologies mb-20 lg:mb-40">
         <Technologies />
       </div>
     </>

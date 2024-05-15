@@ -6,6 +6,7 @@ import Footer from "@/components/footer";
 import SmoothScroll from "@/components/SmoothScroll";
 import '@splidejs/splide/dist/css/splide.min.css';
 import Image from "next/image";
+import Head from "next/head";
 
 // const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({

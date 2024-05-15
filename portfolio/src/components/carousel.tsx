@@ -5,8 +5,12 @@ import Image from "next/image";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import '@splidejs/react-splide/css';
+import useSize from "@/hooks/useSize";
 
 export default function Carousel() {
+
+  const screenSize: [number, number] = useSize()
+  const screenWidth: number = screenSize[0]
 
     return (
         <>
@@ -14,8 +18,9 @@ export default function Carousel() {
               type: 'loop',
               drag: 'free',
               arrows: false,
+              gap: screenWidth > 600 ? '100px' : '50px',
               pagination: false,
-              perPage: 6,
+              perPage: screenWidth > 1024 ? 6 : screenWidth > 768 ? 5 : screenWidth > 640 ? 4 : 3,
               autoScroll: {
                 pauseOnHover: false,
                 pauseOnFocus: false,
