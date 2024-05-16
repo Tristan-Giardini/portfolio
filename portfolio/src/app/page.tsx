@@ -13,14 +13,18 @@ export default function Home() {
 
   return (
     <>
-      <div className="lg:pt-36 lg:pb-40 lg:w-8/12 pt-14 pb-20 md:w-10/12 w-12/12">
-        <p className="lg:text-4xl text-2xl">
+      <div className="flex justify-between items-center lg:justify-normal lg:items-start lg:flex-row lg:pt-32 lg:pb-20 pt-14 pb-20 pr-0 pl-0 lg:pl-0 lg:pr-40 gap-8">
+        <p className="lg:text-4xl md:text-3xl text-2xl">
         A full-stack developer based in Montreal, dedicated to creating user-centric and accessible websites.
         </p>
+        <div >
+          {screenWidth > 768 ? 
+        <Image className="rounded-full" src="/square.png" alt="portrait" width={650} height={650}></Image> : ''}
+        </div>
       </div>
-      <div className="text-xl lg:text-2xl mb-10 md:mb-16 lg:mb-20">Work & Projects</div>
+      <div className="text-xl lg:text-2xl mb-10 md:mb-16 lg:mb-20">Work & Projects 👇</div>
       <div className="flex flex-col w-full gap-12 md:gap-20 xl:gap-60 lg:gap-28">
-      <div className="flex flex-col lg:flex-row gap-12 md:gap-20 lg:gap-28 px-0 sm:px-10 md:px-20 lg:ml-36">
+      <div className="flex flex-col lg:flex-row gap-12 md:gap-20 lg:gap-28 px-0 sm:px-10 md:px-20 lg:ml-40">
         <Work
           link="https://app.kbdinsurance.com/"
           title="KBD Insurance Quoter"
