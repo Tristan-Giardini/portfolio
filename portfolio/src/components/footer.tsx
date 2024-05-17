@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <>
     {screenWidth > 600 ? <>
-      <div className="text-xl bottom-0 flex gap-3 align-center flex-row justify-between w-full pt-8 lg:pt-20">
+      <div className="text-l bottom-0 flex gap-3 align-center font-semibold flex-row justify-between w-full pt-8 lg:pt-20">
       <div>Tristan Giardini</div>
       <div className="relative">
       <Link target="_blank" rel="noopener noreferrer" href="/Tristan Giardini Resume.pdf" className="link-hover" passHref>
@@ -36,7 +36,7 @@ export default function Footer() {
     </>
     : <>
 
-          <div className="text-xl bottom-0 flex flex-col pt-8">
+          <div className="font-semibold text-l bottom-0 flex flex-col pt-8">
           <Link target="_blank" rel="noopener noreferrer" href="/Tristan Giardini Resume.pdf" className="link-hover" passHref>
               Resume/CV
           </Link>

@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <>
     {screenWidth > 768 ?
-      <div className="header flex gap-3 text-xl flex-row justify-between w-full">
+      <div className="header flex gap-3 text-l font-semibold flex-row justify-between w-full">
         <div>Tristan Giardini</div>
         <div className="relative">
           <Link href="mailto:tristangiaridni@gmail.com" className="link-hover">Contact</Link>
@@ -20,7 +20,7 @@ export default function Header() {
       </div> 
       :
       <div className="flex flex-row justify-between w-full">
-        <div className="header flex flex-col text-xl w-full">
+        <div className="header flex flex-col font-semibold text-l w-full">
           <div>Tristan Giardini</div>
           <div className="relative">
             <Link href="mailto:tristangiaridni@gmail.com" className="link-hover">Contact</Link>

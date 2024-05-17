@@ -49,8 +49,8 @@ export default function Work({
         }
         <p className="text-xs">{tech}</p>
       </div>
-      <div className="flex flex-row gap-2 see-div">
-        <Link target="_blank" href={link}>See here</Link><span className="finger-ani">👈</span>
+      <div className="flex font-semibold flex-row gap-2 see-div">
+        <Link target="_blank" href={link}>See more</Link><span className="finger-ani">👈</span>
       </div>
     </div>
     </Parallax>
