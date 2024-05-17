@@ -19,7 +19,9 @@ export default function Home() {
         </p>
         <div >
           {screenWidth > 768 ? 
-        <Image className="rounded-full" src="/square.png" alt="portrait" width={650} height={650}></Image> : ''}
+          <div className="image-container">
+            <Image className="image rounded-full" src="/square.png" alt="portrait" width={650} height={650}></Image>
+          </div> : ''}
         </div>
       </div>
       <div className="text-xl lg:text-2xl mb-10 md:mb-16 lg:mb-20">Work & Projects 👇</div>
@@ -54,7 +56,7 @@ export default function Home() {
           screen={screenWidth}
         />
         </div>
-        <div className="flex flex-col lg:flex-row gap-12 md:gap-20 lg:gap-28 px-0 sm:px-10 md:px-20 lg:ml-24">
+        <div className="flex flex-col lg:flex-row gap-12 md:gap-20 lg:gap-28 px-0 sm:px-10 md:px-20 lg:ml-40">
         <Work
           image="/wf.png"
           link="https://westmountflorist.com/"
@@ -84,7 +86,8 @@ export default function Home() {
           screen={screenWidth}
         />
         </div>
-        <div className="flex flex-row md:gap-20 lg:gap-28 px-0 sm:px-10 md:px-20 lg:ml-24 lg:w-6/12">
+        {/* <div className="flex flex-row px-0 sm:pr-10 md:pr-20 sm:pl-10 lg:pr-36 md:pl-20 lg:ml-40 lg:w-6/12"> */}
+        <div className="flex flex-col lg:flex-row gap-12 md:gap-20 lg:gap-28 px-0 sm:px-10 md:px-20 lg:ml-40">
         <Work
           image="/beccs.png"
           link="https://rebecca-website.vercel.app"
@@ -94,11 +97,12 @@ export default function Home() {
           work="Design & Development"
           tech="React, CSS, Vercel"
           className="self-end"
-          speed={screenWidth > 1024 ? -14 : 0}
+          speed={screenWidth > 1024 ? -9 : 0}
           id="parallax"
           margin={screenWidth > 1024 ? "mb-20" : ""}
           screen={screenWidth}
         />
+        <div className={`w-full p-10`}></div>
         </div>
       </div>
       <div className="technologies mb-20 lg:mb-40">
