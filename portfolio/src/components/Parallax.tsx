@@ -6,6 +6,12 @@ import { ReactNode, useEffect, useRef } from "react"
 import { useWindowSize } from "@darkroom.engineering/hamo";
 
 
+interface WindowSize {
+    width: number;
+    height: number;
+}
+
+
 interface FeaturedParallaxProps {
     className: string,
     children: ReactNode;
@@ -17,7 +23,7 @@ const Parallax = ({className, children, speed=1, id="parallax"}: FeaturedParalla
     const trigger = useRef<HTMLDivElement>(null);
     const target = useRef<HTMLDivElement>(null);
     const timeline = useRef<gsap.core.Timeline | undefined>();
-    const {width: windowWidth} = useWindowSize()
+    const { width: windowWidth } = useWindowSize() as WindowSize;
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
