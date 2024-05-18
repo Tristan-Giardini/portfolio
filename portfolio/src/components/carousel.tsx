@@ -14,22 +14,22 @@ export default function Carousel() {
 
     return (
         <>
-    <Splide aria-label="my images" options={{
-              type: 'loop',
-              drag: 'free',
-              arrows: false,
-              gap: screenWidth > 600 ? '100px' : '50px',
-              pagination: false,
-              perPage: screenWidth > 1024 ? 6 : screenWidth > 768 ? 5 : screenWidth > 640 ? 4 : 3,
-              autoScroll: {
-                pauseOnHover: false,
-                pauseOnFocus: false,
-                rewind: false,
-                speed: 2,
-              }
-            }}
-            extensions={{AutoScroll}}
-    >
+      <Splide aria-label="my images" options={{
+                type: 'loop',
+                drag: 'free',
+                arrows: false,
+                gap: screenWidth > 600 ? '100px' : '50px',
+                pagination: false,
+                perPage: screenWidth > 1024 ? 6 : screenWidth > 768 ? 5 : screenWidth > 640 ? 4 : 3,
+                autoScroll: {
+                  pauseOnHover: false,
+                  pauseOnFocus: false,
+                  rewind: false,
+                  speed: 2,
+                }
+              }}
+              extensions={{AutoScroll}}
+      >
       <SplideSlide>
         <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg" alt="Slide 1" width="150" height="150"></Image>
       </SplideSlide>

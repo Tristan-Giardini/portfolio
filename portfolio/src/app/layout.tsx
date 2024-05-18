@@ -5,10 +5,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import SmoothScroll from "@/components/SmoothScroll";
 import '@splidejs/splide/dist/css/splide.min.css';
-import Image from "next/image";
-import Head from "next/head";
 
-// const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
@@ -27,9 +24,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.variable} font-sans`}>
-          {/* <div style={{ zIndex: -10, position: "fixed", width: "100vw", height: "100vh" }}>
-            <Image src="/wave.jpg" alt="background-image" layout="fill" objectFit="cover" />
-          </div> */}
           <div className="w-full">
           <Header />
           <SmoothScroll>

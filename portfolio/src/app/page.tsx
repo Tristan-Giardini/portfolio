@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect } from "react";
 import Work from "@/components/work";
 import Image from "next/image";
 import Technologies from "@/components/technologies";
@@ -39,7 +38,7 @@ export default function Home() {
           id="parallax"
           screen={screenWidth}
         />
-                <Work
+        <Work
           image="/brmtl.png"
           link="https://www.bathroomsmtl.ca/"
           title="BathroomsMTL"
@@ -53,7 +52,7 @@ export default function Home() {
           id="parallax"
           screen={screenWidth}
         />
-                <Work
+        <Work
           image="/beccs.png"
           link="https://rebecca-website.vercel.app"
           title="Rebecca Storm"
@@ -69,41 +68,35 @@ export default function Home() {
         />
         </div>
         <div className="flex flex-col gap-12 md:gap-20 lg:gap-32 px-5 lg:px-10">
-
-        <Work
-            image="/surf2.png"
-            link="https://surfcustom.com/products/surfboard"
-            title="Surf Custom"
+          <Work
+              image="/surf2.png"
+              link="https://surfcustom.com/products/surfboard"
+              title="Surf Custom"
+              company="HRVST"
+              subtitle="Front-end Development"
+              work="PDP Custom Integration"
+              tech="React, CSS, Vite, Shopify Liquid"
+              className="self-end"
+              speed={screenWidth > 1024 ? 1 : 0}
+              margin={screenWidth > 1024 ? "mb-12" : ""}
+              id="parallax"
+              screen={screenWidth}
+            />
+          <Work
+            image="/wf.png"
+            link="https://westmountflorist.com/"
+            title="Westmount Florist"
             company="HRVST"
             subtitle="Front-end Development"
-            work="PDP Custom Integration"
+            work="Custom Checkout Extension"
             tech="React, CSS, Vite, Shopify Liquid"
             className="self-end"
             speed={screenWidth > 1024 ? 1 : 0}
-            margin={screenWidth > 1024 ? "mb-12" : ""}
+            margin=""
             id="parallax"
             screen={screenWidth}
-          />
-                <Work
-          image="/wf.png"
-          link="https://westmountflorist.com/"
-          title="Westmount Florist"
-          company="HRVST"
-          subtitle="Front-end Development"
-          work="Custom Checkout Extension"
-          tech="React, CSS, Vite, Shopify Liquid"
-          className="self-end"
-          speed={screenWidth > 1024 ? 1 : 0}
-          margin=""
-          id="parallax"
-          screen={screenWidth}
         />
         </div>
-        {/* <div className="flex flex-row px-0 sm:pr-10 md:pr-20 sm:pl-10 lg:pr-36 md:pl-20 lg:ml-40 lg:w-6/12"> */}
-        {/* <div className="flex flex-col lg:flex-row gap-12 md:gap-20 lg:gap-28 px-0 sm:px-10 md:px-20 lg:ml-40">
-  
-        <div className={`w-full p-10`}></div>
-        </div> */}
       </div>
       <div className="technologies mb-20">
         <Technologies />
