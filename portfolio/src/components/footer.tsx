@@ -2,21 +2,28 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import useSize from "@/hooks/useSize";
+// import useSize from "@/hooks/useSize";
+import dynamic from "next/dynamic"
+
+const MediaQuery = dynamic(() => import("react-responsive"), {
+    ssr: false
+})
+
 
 export default function Footer() {
   // const screenSize: [number, number] = useSize()
   // const screenWidth: number = screenSize[0]
 
-  const screenWidth: number = useSize()
+  // const screenWidth: number = useSize()
 
   return (
     <>
-    {screenWidth > 600 ? <>
+    {/* {screenWidth > 600 ?  */}
+    <MediaQuery minWidth={600}>
       <div className="text-l bottom-0 flex gap-3 align-center font-semibold flex-row justify-between w-full pt-8 lg:pt-20">
       <div>Tristan Giardini</div>
       <div className="relative">
-      <Link target="_blank" rel="noopener noreferrer" href="/Tristan Giardini Resume.pdf" className="link-hover" passHref>
+      <Link target="_blank" rel="noopener noreferrer" href="/Tristan Giardini Resume.pdf" className="link-hover-footer" passHref>
           Resume/CV
       </Link>
       </div>
@@ -33,10 +40,11 @@ export default function Footer() {
         </div>
       </div>
     </div>
-    </>
-    : <>
+    </MediaQuery>
+    {/* :  */}
+    <MediaQuery maxWidth={599}>
     <div className="font-semibold text-l bottom-0 flex flex-col pt-8">
-      <Link target="_blank" rel="noopener noreferrer" href="/Tristan Giardini Resume.pdf" className="link-hover" passHref>
+      <Link target="_blank" rel="noopener noreferrer" href="/Tristan Giardini Resume.pdf" className="link-hover-footer" passHref>
               Resume/CV
       </Link>
       <div className="flex align-center flex-row justify-between w-full">
@@ -57,7 +65,8 @@ export default function Footer() {
       </div>
       </div>
     </div>
-    </>}
+    </MediaQuery>
+    {/* } */}
     </>
   );
 }

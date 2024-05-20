@@ -23,6 +23,7 @@ export default function Carousel() {
                 gap: screenWidth > 600 ? '100px' : '50px',
                 pagination: false,
                 perPage: screenWidth > 1024 ? 6 : screenWidth > 768 ? 5 : screenWidth > 640 ? 4 : 3,
+                // perPage: 6,
                 autoScroll: {
                   pauseOnHover: false,
                   pauseOnFocus: false,

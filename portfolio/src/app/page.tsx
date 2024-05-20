@@ -4,12 +4,6 @@ import Work from "@/components/work";
 import Image from "next/image";
 import Technologies from "@/components/technologies";
 import useSize from "@/hooks/useSize";
-import dynamic from "next/dynamic"
-
-const MediaQuery = dynamic(() => import("react-responsive"), {
-    ssr: false
-})
-
 
 export default function Home() {
 
@@ -20,15 +14,15 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex justify-between items-center lg:justify-normal lg:items-start lg:flex-row lg:pt-32 lg:pb-6 pt-14 pb-20 pr-0 pl-0 lg:pl-0 lg:pr-40 gap-8">
+      <div className="flex items-center lg:justify-normal lg:items-start lg:flex-row lg:pt-32 lg:pb-36 pt-14 pb-20 pr-0 pl-0 lg:pl-0 lg:w-[800px] gap-8">
         <p className="lg:text-4xl md:text-3xl text-2xl">
         A full-stack developer based in Montreal, dedicated to creating user-centric and accessible websites.
         </p>
-        <div >
-        <MediaQuery minWidth={768}>
+        {/* <div> */}
+        {/* <MediaQuery minWidth={768}>
             <Image className="image rounded-full" src="/square.png" alt="portrait" width={650} height={650}></Image>
-        </MediaQuery>
-        </div>
+        </MediaQuery> */}
+        {/* </div> */}
       </div>
       <div className="flex flex-row text-xl lg:text-2xl mb-10 md:mb-16 lg:mb-20 gap-2"><p className="font-semibold">Work & Projects</p><p className="pt-1">👇</p></div>
       <div className="flex flex-col-reverse lg:flex-row w-full pl-0 pr-0 md:pl-10 md:pr-10 lg:pl-40 lg:pr-10  gap-12 md:gap-20 lg:gap-0">

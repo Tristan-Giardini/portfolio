@@ -3,12 +3,21 @@
 @tailwind utilities;
 
 
-
+/* 
 :root {
-}
+} */
 
 body {
   margin: 20px 40px;
+    /* opacity: 0;
+    animation: fadeIn 1s 2s forwards;
+    background-color: white;  */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
 @layer utilities {
@@ -39,7 +48,23 @@ body {
 }
 
 .link-hover:hover::before {
-  width: 100%;
+  width: 66px;
+}
+
+.link-hover-footer::before {
+  content: '';
+  background-color: hsla(196, 61%, 58%, .75);
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 0%;
+  height: 6px;
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+
+.link-hover-footer:hover::before {
+width: 96px;
 }
 
 @keyframes moveX {
