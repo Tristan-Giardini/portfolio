@@ -9,8 +9,10 @@ import useSize from "@/hooks/useSize";
 
 export default function Carousel() {
 
-  const screenSize: [number, number] = useSize()
-  const screenWidth: number = screenSize[0]
+  // const screenSize: [number, number] = useSize()
+  // const screenWidth: number = screenSize[0]
+
+  const screenWidth: number = useSize()
 
     return (
         <>

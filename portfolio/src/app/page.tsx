@@ -1,14 +1,22 @@
-"use client";
+'use client';
 
 import Work from "@/components/work";
 import Image from "next/image";
 import Technologies from "@/components/technologies";
 import useSize from "@/hooks/useSize";
+import dynamic from "next/dynamic"
+
+const MediaQuery = dynamic(() => import("react-responsive"), {
+    ssr: false
+})
+
 
 export default function Home() {
 
-  const screenSize: [number, number] = useSize()
-  const screenWidth: number = screenSize[0]
+  // const screenSize: [number, number] = useSize()
+  // const screenWidth: number = screenSize[0]
+
+  const screenWidth: number = useSize()
 
   return (
     <>
@@ -17,8 +25,9 @@ export default function Home() {
         A full-stack developer based in Montreal, dedicated to creating user-centric and accessible websites.
         </p>
         <div >
-          {screenWidth > 768 ? 
-            <Image className="image rounded-full" src="/square.png" alt="portrait" width={650} height={650}></Image> : ''}
+        <MediaQuery minWidth={768}>
+            <Image className="image rounded-full" src="/square.png" alt="portrait" width={650} height={650}></Image>
+        </MediaQuery>
         </div>
       </div>
       <div className="flex flex-row text-xl lg:text-2xl mb-10 md:mb-16 lg:mb-20 gap-2"><p className="font-semibold">Work & Projects</p><p className="pt-1">👇</p></div>
