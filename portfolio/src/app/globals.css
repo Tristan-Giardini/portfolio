@@ -97,4 +97,8 @@ width: 96px;
   .link-hover:hover::before {
     width: 0%;
   }
+
+  body {
+    margin: 10px 20px;
+  }
 }

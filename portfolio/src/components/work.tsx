@@ -35,7 +35,7 @@ export default function Work({
   return (
     <>
     <Parallax speed={speed} className={className} id={id}>
-    <div className={`project-card w-full p-10 rounded-lg lg:${margin} bg-gray-50`}>
+    <div className={`project-card w-full p-6 md:p-10 rounded-lg lg:${margin} bg-gray-50`}>
       <Link target="_blank" href={link}><Image src={image} alt="project image" width={800} height={800} className="rounded-lg"></Image></Link>
       <div className="mt-10 mb-4 flex flex-col gap-1">
         <p><span className="font-semibold">{title}</span> - <span className="italic">{company}</span></p> 
