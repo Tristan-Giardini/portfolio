@@ -1,6 +1,5 @@
 'use client'
 
-import { useEffect } from "react";
 import Image from "next/image";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
@@ -8,9 +7,6 @@ import '@splidejs/react-splide/css';
 import useSize from "@/hooks/useSize";
 
 export default function Carousel() {
-
-  // const screenSize: [number, number] = useSize()
-  // const screenWidth: number = screenSize[0]
 
   const screenWidth: number = useSize()
 

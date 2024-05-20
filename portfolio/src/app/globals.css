@@ -3,15 +3,9 @@
 @tailwind utilities;
 
 
-/* 
-:root {
-} */
 
 body {
   margin: 20px 40px;
-    /* opacity: 0;
-    animation: fadeIn 1s 2s forwards;
-    background-color: white;  */
 }
 
 @keyframes fadeIn {
@@ -99,6 +93,6 @@ width: 96px;
   }
 
   body {
-    margin: 10px 20px;
+    margin: 14px 20px;
   }
 }
