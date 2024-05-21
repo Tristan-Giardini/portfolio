@@ -58,7 +58,7 @@ body {
 }
 
 .link-hover-footer:hover::before {
-width: 96px;
+width: 98px;
 }
 
 @keyframes moveX {
@@ -73,7 +73,7 @@ width: 96px;
   100% { transform: translateY(0); }
 }
 
-.see-div:hover .finger-ani {
+.project-card:hover .finger-ani {
   animation: moveX 1s ease-in-out infinite;
 }
 
@@ -94,5 +94,9 @@ width: 96px;
 
   body {
     margin: 14px 20px;
+  }
+
+  .finger {
+    display: none;
   }
 }
