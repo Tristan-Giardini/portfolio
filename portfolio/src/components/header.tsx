@@ -12,7 +12,7 @@ export default function Header() {
         <div className="header flex flex-col font-semibold text-l">
           <div>Tristan Giardini</div>
           <div className="relative">
-            <Link href="mailto:tristangiaridni@gmail.com" className="link-hover">Contact</Link>
+            <Link href="mailto:tristangiardini@gmail.com" className="link-hover">Contact</Link>
           </div>
         </div> 
         <div>
