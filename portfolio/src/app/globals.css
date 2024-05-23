@@ -61,6 +61,23 @@ body {
 width: 98px;
 }
 
+.link-hover-home::before {
+  content: '';
+  background-color: hsla(196, 61%, 58%, .75);
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 0%;
+  height: 6px;
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+
+.link-hover-home:hover::before {
+width: 73px;
+}
+
+
 @keyframes moveX {
   0% { transform: translateX(0); }
   50% { transform: translateX(10px); }
@@ -87,8 +104,26 @@ width: 98px;
   }
 }
 
+@media screen and (max-width: 767px) {
+  .link-hover-home::before {
+    height: 3px;
+  }
+
+  .link-hover-home:hover::before {
+    width: 48px;
+  }
+}
+
 @media screen and (max-width: 640px) {
   .link-hover:hover::before {
+    width: 0%;
+  }
+
+  .link-hover-footer:hover::before {
+    width: 0%;
+  }
+
+  .link-hover-home:hover::before {
     width: 0%;
   }
 
