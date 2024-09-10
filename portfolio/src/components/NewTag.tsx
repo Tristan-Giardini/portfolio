@@ -1,4 +1,4 @@
-export default function New() {
+export default function NewTag() {
   return (
     <>
       <svg

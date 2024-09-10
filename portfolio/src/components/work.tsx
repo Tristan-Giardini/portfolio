@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Parallax from "./Parallax";
-import New from "./new";
+import NewTag from "./NewTag";
 
 interface FeaturedWorkProps {
   title: string;
@@ -78,7 +78,7 @@ export default function Work({
             <div className="tag-container absolute">
               {isNew && (
                 <div className="new-tag">
-                  <New />
+                  <NewTag />
                 </div>
               )}
             </div>
