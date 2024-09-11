@@ -71,10 +71,10 @@ export default function Home() {
         <div className="flex flex-col gap-12 md:gap-20 lg:gap-32 px-5 lg:px-10">
           <Work
             image="/aprilapril.png"
-            link="https://aprilapril.gallery"
+            link="https://april-april.vercel.app/"
             title="april april"
             company="Freelance"
-            subtitle="Font-end Development"
+            subtitle="Full-stack Development"
             work="Custom Website Build"
             tech="Next.js, TypeScript, Tailwind, Sanity"
             className="self-end"
