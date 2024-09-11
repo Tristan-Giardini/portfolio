@@ -71,7 +71,7 @@ export default function Home() {
         <div className="flex flex-col gap-12 md:gap-20 lg:gap-32 px-5 lg:px-10">
           <Work
             image="/aprilapril.png"
-            link="https://april-april.vercel.app/"
+            link="https://aprilapril.gallery"
             title="april april"
             company="Freelance"
             subtitle="Full-stack Development"
