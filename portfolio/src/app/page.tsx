@@ -39,7 +39,7 @@ export default function Home() {
           />
           <Work
             image="/brmtl.png"
-            link="https://www.bathroomsmontreal.onrender.com/"
+            link="https://bathroomsmontreal.onrender.com/"
             title="BathroomsMTL"
             company="Project"
             subtitle="Full-stack Development"
