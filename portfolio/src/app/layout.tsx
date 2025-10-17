@@ -30,6 +30,7 @@ export default function RootLayout({
           <SmoothScroll>{children}</SmoothScroll>
           <Footer />
         </div>
+        <Analytics />
       </body>
     </html>
   );
