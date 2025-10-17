@@ -4,7 +4,8 @@ import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import SmoothScroll from "@/components/SmoothScroll";
-import '@splidejs/splide/dist/css/splide.min.css';
+import "@splidejs/splide/dist/css/splide.min.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -24,11 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.variable} font-sans`}>
-          <div className="w-full">
+        <div className="w-full">
           <Header />
-          <SmoothScroll>
-            {children}
-          </SmoothScroll>
+          <SmoothScroll>{children}</SmoothScroll>
           <Footer />
         </div>
       </body>
