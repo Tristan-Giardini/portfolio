@@ -82,7 +82,7 @@ export default function Home() {
             margin={screenWidth > 1024 ? "mb-12" : ""}
             id="parallax"
             screen={screenWidth}
-            isNew={true}
+            isNew={false}
           />
           <Work
             image="/surf2.png"
